@@ -12,10 +12,52 @@
         android:theme="@style/Theme.ESISAAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".BilgisayarActivity"
+            android:name=".ui.kurumsalAlici.kurumsalalicimoda.KurumsalAliciModaActivity"
             android:exported="false" />
         <activity
-            android:name=".AyakkabiActivity"
+            android:name=".ui.kurumsalAlici.kurumsalalicibilgisayarsayfasi.KurumsalAliciBilgisayarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kurumsalAlici.kurumsalaliciayakkabi.KurumsalAliciAyakkabiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselalicimodasayfasi.BireyselAliciModaMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselAliciUrunListeleme.BireyselAliciUrunlistelemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kurumsalAlici.kurumsalAliciUrunDetayi.KurumsalAliciUrunDetayiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kurumsalAlici.kurumsalAliciUrunListeleme.KurumsalAliciUrunListelemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.satici.saticiUrunGuncelleme.SaticiUrunGuncellemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.satici.saticiUrunEkleme.SaticiUrunEklemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselAliciUrunDetayi.BireyselAliciUrunDetayiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.satici.saticianasayfa.SaticiAnasayfaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kurumsalAlici.kurumsalAliciAnasayfa.KurumsalAliciAnasayfaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselAliciAnasayfa.BireyselAliciAnasayfaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.girisler.bireyselAliciGiris.GirisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselalicibilgisayarsayfasi.BireyselAliciBilgisayarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bireyselAlici.bireyselaliciayakkabisayfasi.BireyselAliciAyakkabiActivity"
             android:exported="false" />
         <activity
             android:name=".ui.satici.saticihesabim.SaticiHesabimActivity"
@@ -48,19 +90,16 @@
             android:name=".ui.bireyselAlici.bireyselAliciKategoriler.KategorilerActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.Girisler.bireyselAliciGiris.BireyselAliciGiris"
-            android:exported="false" />
-        <activity
             android:name=".ui.bireyselAlici.bireyselAliciDestek.BireyselAliciDestekActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.uyelikler.bireyselAliciUyelik.BireyselAliciUyelikActivity"
+            android:name=".ui.bireyselAlici.bireyselAliciHesabim.AliciHesabimActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.bireyselAlici.bireyselAliciHesabim.AliciHesabimActivity"
+            android:name=".ui.uyelikler.bireyselAliciUyelik.BireyselAliciUyelikActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

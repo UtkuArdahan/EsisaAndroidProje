@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import com.example.esisaandroid.databinding.ActivityBireyselAliciUyelikBinding
-import com.example.esisaandroid.ui.Girisler.bireyselAliciGiris.BireyselAliciGiris
+import com.example.esisaandroid.ui.girisler.bireyselAliciGiris.GirisActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -14,8 +14,8 @@ import com.google.firebase.database.FirebaseDatabase
 class BireyselAliciUyelikActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBireyselAliciUyelikBinding
     private lateinit var auth:FirebaseAuth
-    var databaseReference:DatabaseReference?=null
-    var database:FirebaseDatabase?=null
+    private var databaseReference:DatabaseReference?=null
+    private var database:FirebaseDatabase?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding=ActivityBireyselAliciUyelikBinding.inflate(layoutInflater)
@@ -57,7 +57,7 @@ class BireyselAliciUyelikActivity : AppCompatActivity() {
         }
         //Giriş sayfasına gitmek için
         binding.uyegirisyapbuton.setOnClickListener {
-            intent = Intent(applicationContext, BireyselAliciGiris::class.java)
+            intent = Intent(applicationContext, GirisActivity::class.java)
             startActivity(intent)
             finish()
         }
